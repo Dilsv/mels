@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-dot8zu*i!_*88_=xaj6i#fave8a*!_)e#d@j%g(br*$@w@rz4i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://8000-dilsv-mels-u4lx078qwk4.ws-eu115.gitpod.io/']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 ]
 
 MIDDLEWARE = [
