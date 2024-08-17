@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-dilsv-mels-u4lx078qwk4.ws-eu115.gitpod.io', 'mels-18c9cbd51cf1.herokuapp.com']
+ALLOWED_HOSTS = ['8000-dilsv-mels-tr028poqs48.ws.codeinstitute-ide.net', 'mels-18c9cbd51cf1.herokuapp.com']
 
 
 # Application definition
@@ -133,7 +133,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

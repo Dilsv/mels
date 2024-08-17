@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ba2a2a;
+    color: #333;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: #fff;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+.slideshow {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}
