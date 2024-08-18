@@ -20,6 +20,7 @@
 </head>
 <body>
     <header>
+        <!-- Navbar-->
         <nav class="navbar navbar-dark navbar-expand-sm">
             <a href="/" class="navbar-brand">TOUCHED BY MEL</a>
 
@@ -37,21 +38,25 @@
           LOGIN/REGISTER
         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Irish</a>
-                            <a class="dropdown-item" href="#">Scotch</a>
-                            <a class="dropdown-item" href="#">Japanese</a>
-                            <a class="dropdown-item" href="#">American</a>
+                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" href="#">Sign Up</a>
                         </div>
                     </li>
 
                     <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
                 </ul>
             </div>
-            <div class="d-none d-md-block">
-                <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-                <a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
-            </div>
         </nav>
+        <!-- Navbar ends-->
+
+        <!-- Slideshow-->
+        <div class="slideshow">
+            <img src="{% static 'images/slide1.jpg' %}" alt="Slide 1">
+            <img src="{% static 'images/slide2.jpg' %}" alt="Slide 2">
+            <img src="{% static 'images/slide3.jpg' %}" alt="Slide 3">
+            <img src="{% static 'images/slide4.jpg' %}" alt="Slide 4">
+        </div>
+        <!-- Slideshow ends-->
     </header>
     <main>
         {% block content %}
