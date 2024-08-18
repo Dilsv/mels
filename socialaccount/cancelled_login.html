@@ -1,0 +1,14 @@
+{% extends "socialaccount/base.html" %}
+{% load i18n %}
+
+{% block head_title %}{{ _("Login Aborted") }}{% endblock %}
+
+{% block content %}
+
+<h1>{{ _("Login Aborted") }}</h1>
+
+{% url 'account_login' as login_url %}
+
+<p>{{ _("You have chosen to abort the login process with your existing account. If this was unintentional, you can <a href=\"") }}{{ login_url }}{{ _("\">sign in here</a>.") }}</p>
+
+{% endblock %}

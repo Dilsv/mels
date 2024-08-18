@@ -1,0 +1,27 @@
+{% extends "socialaccount/base.html" %}
+{% load i18n %}
+
+{% block head_title %}{{ _("Sign In") }}{% endblock %}
+
+{% block content %}
+  <h1>
+    {% if process == "connect" %}
+      {{ _("Connect") }} {{ provider.name }}
+    {% else %}
+      {{ _("Sign In Via") }} {{ provider.name }}
+    {% endif %}
+  </h1>
+
+  <p>
+    {% if process == "connect" %}
+      {{ _("You are about to connect a new third party account from") }} {{ provider.name }}.
+    {% else %}
+      {{ _("You are about to sign in using a third party account from") }} {{ provider.name }}.
+    {% endif %}
+  </p>
+
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit">{{ _("Continue") }}</button>
+  </form>
+{% endblock %}

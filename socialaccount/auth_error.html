@@ -1,0 +1,9 @@
+{% extends "socialaccount/base.html" %}
+{% load i18n %}
+
+{% block head_title %}{{ _("Login Failure") }}{% endblock %}
+
+{% block content %}
+  <h1>{{ _("Login via Social Network Failed") }}</h1>
+  <p>{{ _("An error occurred while trying to log in with your social network account.") }}</p>
+{% endblock %}
