@@ -1,7 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
 <div class="services">
     <div class="service">
         <h3>Natural</h3>
         <p>Description of Natural Makeup service.</p>
+        <img src="{% static '/images/gallery/slide6.JPG' %}" alt="Slide 3">
     </div>
     <div class="service">
         <h3>Glam</h3>
@@ -17,7 +23,7 @@
     </div>
 </div>
 
-<h2>Enquire about our services</h2>
+<h2 id="services_heading">Enquire about our services</h2>
 <form method="post">
     {% csrf_token %}
     <label for="name">Name:</label>
@@ -31,3 +37,4 @@
     
     <button type="submit">Send</button>
 </form>
+{% endblock %}
