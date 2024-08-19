@@ -1,40 +1,78 @@
+<!-- services.html -->
+
 {% extends 'base.html' %}
 
-{% block title %}Contact Us{% endblock %}
+{% load static %}
 
 {% block content %}
-<div class="services">
-    <div class="service">
-        <h3>Natural</h3>
-        <p>Description of Natural Makeup service.</p>
-        <img src="{% static '/images/gallery/slide6.JPG' %}" alt="Slide 3">
-    </div>
-    <div class="service">
-        <h3>Glam</h3>
-        <p>Description of Glam Makeup service.</p>
-    </div>
-    <div class="service">
-        <h3>Bridal</h3>
-        <p>Description of Bridal Makeup service.</p>
-    </div>
-    <div class="service">
-        <h3>HD</h3>
-        <p>Description of HD Makeup service.</p>
-    </div>
-</div>
+    <h1>Our Services</h1>
 
-<h2 id="services_heading">Enquire about our services</h2>
-<form method="post">
-    {% csrf_token %}
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-    
-    <label for="message">Message:</label>
-    <textarea id="message" name="message"></textarea>
-    
-    <button type="submit">Send</button>
-</form>
+    <div class="container">
+        <!-- Bootstrap row for the services grid -->
+        <div class="row">
+            <!-- Service Item 1 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-item card">
+                    <img src="{% static 'images/gallery/slide2.JPG' %}" class="card-img-top" alt="Natural Makeup">
+                    <div class="card-body">
+                        <h2 class="card-title">Natural</h2>
+                        <p class="card-text">Enhance your natural beauty with our gentle and subtle makeup services. Perfect for a fresh and effortless look.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Item 2 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-item card">
+                    <img src="{% static 'images/gallery/slide2.JPG' %}" class="card-img-top" alt="Natural Makeup">
+                    <div class="card-body">
+                        <h2 class="card-title">Glam</h2>
+                        <p class="card-text">Make a statement with our bold and glamorous makeup. Ideal for special events and occasions where you want to stand out.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Item 3 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-item card">
+                    <img src="{% static 'images/gallery/slide2.JPG' %}" class="card-img-top" alt="Natural Makeup">
+                    <div class="card-body">
+                        <h2 class="card-title">Bridal</h2>
+                        <p class="card-text">Look radiant on your special day with our bridal makeup services. Tailored to match your wedding theme and personal style.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Item 4 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="service-item card">
+                    <img src="{% static 'images/gallery/slide2.JPG' %}" class="card-img-top" alt="Natural Makeup">
+                    <div class="card-body">
+                        <h2 class="card-title">HD</h2>
+                        <p class="card-text">Achieve a flawless look with our HD makeup, designed to stay perfect under high-definition cameras and lighting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Book a Service</h2>
+
+    {% if message %}
+        <p class="success-message">{{ message }}</p>
+    {% endif %}
+
+    <form id="bookingForm" method="post" action="{% url 'services' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit Booking</button>
+    </form>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function() {
+            setTimeout(function() {
+                document.getElementById('bookingForm').reset();
+            }, 1000); // Adjust the delay time if needed
+        });
+    </script>
 {% endblock %}
