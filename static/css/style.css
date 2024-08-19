@@ -81,6 +81,13 @@ body {
     display: block;
 }
 
+/* Social icons */
+
+.social-icon {
+    height: 2rem;
+    margin: 1rem;
+}
+
 /* Home page quote */
 .quote {
     position: center;
