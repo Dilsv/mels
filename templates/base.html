@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
     {% block onload_js %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -54,21 +56,41 @@
     <!-- Content Goes here -->
     {% endblock content %}
 
-    <footer>
-        <!-- Social media links -->
-        <a href="" target="_blank" rel="noopener" aria-label="Instagram - Opens In New Tab">
-            <img src="{% static 'icons/black-instagram-icon.svg'}" alt="Instagram Icon" class="social-icon"
-        </a>
-        <a href="" target="_blank" rel="noopener" aria-label="Pinterest - Opens In New Tab">
-            <img src="{% static 'icons/pinterest-round-icon.svg'}" alt="Pinterest Icon" class="social-icon"
-        </a>
-        <a href="" target="_blank" rel="noopener" aria-label="Twitter - Opens In New Tab">
-            <img src="{% static 'icons/twitter-icon.svg'}" alt="Twitter Icon" class="social-icon"
-        </a>
+    <!-- Footer -->
+    <div>
 
-        <p>&copy; 2024 Touched By Mel</p>
-        
-    </footer>
+        <footer class="text-center footer">
+            <div>
+                <!-- Section: Social media -->
+                <section class="footer-light">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://facebook.com"
+                        target="_blank" rel="noopener" role="button" data-mdb-ripple-color="dark"><i
+                            class="fab fa-facebook-f"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com" target="_blank"
+                        rel="noopener" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://google.com" target="_blank"
+                        rel="noopener" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://instagram.com"
+                        target="_blank" rel="noopener" role="button" data-mdb-ripple-color="dark"><i
+                            class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://linkedin.com"
+                        target="_blank" rel="noopener" role="button" data-mdb-ripple-color="dark"><i
+                            class="fab fa-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com" target="_blank"
+                        rel="noopener" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+                </section>
+            </div>
+        </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

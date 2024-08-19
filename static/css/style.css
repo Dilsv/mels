@@ -11,9 +11,10 @@ body {
 
 .slideshow {
     width: 100%;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
     position: center;
+    margin-bottom: 100px;
 }
 
 .slideshow img {
@@ -21,7 +22,7 @@ body {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    animation: slide 20s infinite;
+    animation: slide 10s infinite;
 }
 
 @keyframes slide {
@@ -81,6 +82,25 @@ body {
     display: block;
 }
 
+/* Book Now Button */
+
+.btn {
+    border: none;              /* Remove default border */
+    border-radius: 4px;        /* Rounded corners */
+    color: white;              /* Text color */
+    padding: 10px 20px;        /* Vertical and horizontal padding */
+    font-size: 16px;           /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+    cursor: pointer;           /* Pointer cursor on hover */
+    align-content: center;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+  
+  /* Button hover effect */
+button:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+}
+  
 /* Social icons */
 
 .social-icon {
@@ -139,4 +159,23 @@ footer {
     justify-content: center;
     align-items: center;
     border-top: 0;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.main-bg {
+    overflow: scroll;
+}
+
+.footer-light {
+    height: 90px;
+}
+
+.btn-link {
+    color: #F5EBE0!important;
+    margin-bottom: -55px !important;
+}
+
+.content-wrapper {
+    min-height: 120vh;
 }
