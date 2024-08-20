@@ -270,7 +270,9 @@ The ContactUs Model contains the following:
 ### Wireframes
 The wireframes were created using Balsamiq
 <details><summary></summary>
-<img src="docs/wireframes.png">
+<img src="static/images/gallery/readme.md/wireframes-1.png">
+<img src="static/images/gallery/readme.md/wireframes-2.png">
+<img src="static/images/gallery/readme.md/wireframes-3.png">
 </details>
 
 
@@ -320,42 +322,41 @@ The wireframes were created using Balsamiq
 
 <details><summary>See feature images</summary>
 
-![Home page](docs/features/feature-homepage.PNG)
+![Home page](static/images/gallery/readme.md/)
 </details>
 
 
 ### Logo & Navigation
 - Custom logo for the business
 - Fully Responsive
-- On small screens switches to hamburger menu
-- Indicates login/logout in status
+- Indicates login/logout in sandwich bar
 - displayed on all pages
 
 <details><summary>See feature images</summary>
 
-![Footer](docs/features/feature-logo-navbar.PNG)
-![Footer](docs/features/feature-logo-navbar-login.PNG)
-![Footer](docs/features/feature-logo-navbar-hamburger.PNG)
+![Footer](static/images/gallery/readme.md/)
+![Footer](static/images/gallery/readme.md/)
+![Footer](static/images/gallery/readme.md/)
 </details>
 
 
 ### Footer
 - Contains social media links and copyright
-- displayed across all pages
+- Displayed across all pages
 
 <details><summary>See feature images</summary>
 
-![Footer](docs/features/feature-footer.PNG)
+![Footer](static/images/gallery/readme.md/)
 </details>
 
 
-### Sign up / Register
+### Login / Register
 - Allow users to register an acoount
 - Username and password is required, email is optional
 
 <details><summary>See feature images</summary>
 
-![Register](docs/features/feature-register.PNG)
+![Register](static/images/gallery/readme.md/)
 </details>
 
 
@@ -364,8 +365,8 @@ The wireframes were created using Balsamiq
 
 <details><summary>See feature images</summary>
 
-![Login](docs/features/feature-login.PNG)
-![Login](docs/features/feature-login2.PNG)
+![Login](static/images/gallery/readme.md/)
+![Login](static/images/gallery/readme.md/)
 </details>
 
 
@@ -375,19 +376,19 @@ The wireframes were created using Balsamiq
 
 <details><summary>See feature images</summary>
 
-![Logout](docs/features/feature-logout.PNG)
+![Logout](static/images/gallery/readme.md/)
 </details>
 
 
 ### Book
 - Allows the user to book a table using the booking form
-- Messages are displayed if the data is not valid such as phone number lenght is too short and the email address is not a valid format
+- Messages are displayed if the data is not valid such as phone number length is too short and the email address is not a valid format
 
 <details><summary>See feature images</summary>
 
-![Book](docs/features/feature-book-table.PNG)
-![Book](docs/features/feature-book-table2.PNG)
-![Book](docs/features/feature-book-table3.PNG)
+![Book](static/images/gallery/readme.md/)
+![Book](static/images/gallery/readme.md/)
+![Book](static/images/gallery/readme.md/)
 </details>
 
 
@@ -398,7 +399,7 @@ The wireframes were created using Balsamiq
 
 <details><summary>See feature images</summary>
 
-![My Bookings](docs/features/feature-my-bookings.PNG)
+![My Bookings](static/images/gallery/readme.md/)
 </details>
 
 
@@ -406,8 +407,8 @@ The wireframes were created using Balsamiq
 - Allows the user to edit their booking to another date, time, guest count and table
 <details><summary>See feature images</summary>
 
-![Edit Booking](docs/features/feature-edit-booking.PNG)
-![ImaEdit Bookingge](docs/features/feature-edit-booking2.PNG)
+![Edit Booking](static/images/gallery/readme.md/)
+![ImaEdit Bookingge](static/images/gallery/readme.md/)
 </details>
 
 
@@ -416,49 +417,45 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Cancel Booking](docs/features/feature-cancel-booking.PNG)
+![Cancel Booking](static/images/gallery/readme.md/)
 </details>
 
 
-### Food Menu
-- The food menu displays all available foods on the menu
-- Menu is seperated by starters, mains and desserts
+### Services
+- The services displays all available products on the page
+- Services are seperated by natural, glam, bridal and HD.
 - Items can be added via the admin panel in the backend by staff
-- Staff can create, update and delete foods via the admin panel
+- Staff can create, update and delete services via the admin panel
   
 <details><summary>See feature images</summary>
 
-![Food Menu](docs/features/feature-food-menu.PNG)
+![Food Menu](static/images/gallery/readme.md/)
 </details>
 
 
-### Drinks Menu
-- The drinks menu displays all available foods on the menu
-- Menu is seperated by wines, beers and cocktails
-- Items can be added via the admin panel in the backend by staff
-- Staff can create, update and delete foods via the admin panel 
-  
-<details><summary>See feature images</summary>
-
-![Drinks Menu](docs/features/feature-drinks-menu.PNG)
-</details>
-
-
-### Blog
-- The blog displays each post made by a staff member
+### Home
+- The about displays a slideshow of some photos placed by the web designer
 - Paginations is used to display 4 posts per page
   
 <details><summary>See feature images</summary>
 
-![Blog](docs/features/feature-blog.PNG)
+![Blog](static/images/gallery/readme.md/)
 </details>
 
 
-### Blog Expanded
-- Expands into the selected blog the user wishes to read
-- Displays a featured image uploaded by the poster
-- If no image is uploaded a default image is then used
-- Registerd user can comment on the blog
+### About
+- The about displays an image of the atist with some information placed by the web designer
+- Paginations is used to display 4 posts per page
+  
+<details><summary>See feature images</summary>
+
+![Blog](static/images/gallery/readme.md/)
+</details>
+
+
+### Services
+- Displays a featured image along with the service and information
+- Registered user can comment on the blog
   
 <details><summary>See feature images</summary>
 
@@ -466,26 +463,14 @@ The wireframes were created using Balsamiq
 </details>
 
 
-### Comments
-- Comments made are set to pending approval status to ensure nothing bad is displayed
-- Only registered users can comment on a blog post
-- Staff can approve comments via the admin panel on the backend
-  
-<details><summary>See feature images</summary>
-
-![Comments](docs/features/feature-comments.PNG)
-</details>
-
-
 ### Contact Us
 - Registered users can DM staff via the message box
 - Contact info such as, phone, email, and address is displayed
-- A Google Map is embedded with the address for users to use
   
 <details><summary>See feature images</summary>
 
-![Contact Us](docs/features/feature-contact-us.PNG)
-![Contact Us](docs/features/feature-contact-us2.PNG)
+![Contact Us](static/images/gallery/readme.md/)
+![Contact Us](static/images/gallery/readme.md/)
 </details>
 
 
@@ -496,7 +481,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Social Media Links](docs/features/feature-social-links.PNG)
+![Social Media Links](static/images/gallery/readme.md/)
 </details>
 
 
@@ -506,7 +491,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Pagination](docs/features/feature-pagination.PNG)
+![Pagination](static/images/gallery/readme.md/)
 </details>
 
 
@@ -544,20 +529,8 @@ The W3C Markup Validation Service
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-cancel-booking.PNG">
 </details>
 
-<details><summary>Food Menu</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-food-menu.PNG">
-</details>
-
-<details><summary>Drinks Menu</summary>
+<details><summary>Services</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-drinks-menu.PNG">
-</details>
-
-<details><summary>Blog</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-blog.PNG">
-</details>
-
-<details><summary>Blog Expanded</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-blog-expanded.PNG">
 </details>
 
 <details><summary>Contact Us</summary>
@@ -594,7 +567,7 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle.PNG">
 </details>
 
-<hr><summary>Bar & Grill</summary><hr>
+<hr><summary>Touched by Mel</summary><hr>
 
 
 <details><summary>Admin.py</summary>
@@ -1520,7 +1493,7 @@ Images used were sourced from Pexels.com and an AI image generator (Dalle2) was 
 
 ### Code
 
-Bootstrap dark navigation theme was used alongside boostrap classes and carousel
+Bootstrap navigation bar was used alongside boostrap classes and carousel
 
 ##### Back to [top](#table-of-contents)<hr>
 
@@ -1529,3 +1502,4 @@ Bootstrap dark navigation theme was used alongside boostrap classes and carousel
 ### Special thanks to the following:
 - Code Institute
 - My Mentor Mo Shami
+- My current and fellow CI Alumni and students, Emma Charles Wilson, Vasilis, Aaron Beale & Daisy Gunn
