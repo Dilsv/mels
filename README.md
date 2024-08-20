@@ -2,7 +2,7 @@
 
 ![Am I Responsive](docs/am-i-responsive.PNG)
 
-**Developer: Arron Beale**
+**Developer: Dilsat Varli**
 
 💻 [Visit live website](https://ci-pp4-the-diplomat.herokuapp.com/)  
 (Ctrl + click to open in new tab)
@@ -330,13 +330,12 @@ The wireframes were created using Balsamiq
 - Custom logo for the business
 - Fully Responsive
 - Indicates login/logout in sandwich bar
-- displayed on all pages
+- Displayed on all pages
 
 <details><summary>See feature images</summary>
 
 ![Footer](static/images/gallery/readme.md/)
-![Footer](static/images/gallery/readme.md/)
-![Footer](static/images/gallery/readme.md/)
+
 </details>
 
 
@@ -459,7 +458,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Blog Expanded](docs/features/feature-blog2.PNG)
+![Services](static/images/gallery/readme.md/)
 </details>
 
 
@@ -502,47 +501,47 @@ The wireframes were created using Balsamiq
 
 The W3C Markup Validation Service
 <details><summary>Home</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-index.PNG">
+<img src="">
 </details>
 
 <details><summary>Register</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-register.PNG">
+<img src="">
 </details>
 
 <details><summary>Login</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-login.PNG">
+<img src="">
 </details>
 
 <details><summary>Logout</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-logout.PNG">
+<img src="">
 </details>
 
 <details><summary>Bookings</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-booking-list.PNG">
+<img src="">
 </details>
 
 <details><summary>Edit Booking</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-edit-booking.PNG">
+<img src="">
 </details>
 
 <details><summary>Cancel Booking</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-cancel-booking.PNG">
+<img src="">
 </details>
 
 <details><summary>Services</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-drinks-menu.PNG">
+<img src="">
 </details>
 
 <details><summary>Contact Us</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-contact-us.PNG">
+<img src="">
 </details>
 
 <details><summary>Confirmed</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-confirmed.PNG">
+<img src="">
 </details>
 
 <details><summary>404</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-404.PNG">
+<img src="">
 </details><hr>
 
 
