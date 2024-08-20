@@ -45,8 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
-    'django_summernote',
+    'allauth.socialaccount', 
     
 
     #Your apps
