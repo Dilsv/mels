@@ -3,10 +3,22 @@
 {% load static %}
 
 {% block content %}
-<div class="about-us">
-    <div class="description">
-        <h2>Melisa Karabeyaz</h2>
-        <p>Our makeup artist is highly skilled and experienced, providing top-notch services for all occasions.</p>
+<div class="container my-5">
+    <div class="row align-items-center">
+        <!-- Image on the left -->
+        <div class="col-md-6">
+            <img src="static/images/gallery/about-page/about.JPG" alt="Makeup Image" class="img-fluid rounded shadow">
+        </div>
+        <!-- Text on the right -->
+        <div class="col-md-6">
+            <h1>About Us</h1>
+            <p class="about-text">
+                Touched by Mel was founded out of a profound passion for colour and transformation,
+                with a commitment to enhancing each individual's natural beauty. I specialise in 
+                crafting bespoke makeup looks that perfectly complement your unique style,
+                ensuring you feel confident and radiant for any occasion.
+            </p>
+        </div>
     </div>
 </div>
 {% endblock %}

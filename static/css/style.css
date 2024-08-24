@@ -4,7 +4,7 @@
 body {
     font-family: roboto, sans-serif;
     background-color: #D6CCC2;
-    color: #333;
+    color: ##22221C;
 }
 
 .heading {
@@ -86,6 +86,43 @@ body {
     display: block;
 }
 
+/* About Us Page */
+
+h1 {
+    font-family: whisper, sans-serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #22221C; /* Accent color for the title */
+}
+
+.about-text {
+    font-family: roboto, sans-serif;
+    font-size: 1.135rem;
+    line-height: 1.6;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
+
 /* Book Now Button */
 
 .btn {
@@ -124,8 +161,6 @@ button:hover {
 
 .callout-container {
     height: 100vh;
-
-    background: url('../images/whiskey-background.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -217,12 +252,12 @@ footer {
 
 .service h3 {
     margin-top: 0;
-    color: #333;
+    color: #22221C;
 }
 
 .service p {
     margin-bottom: 0;
-    color: #555;
+    color: #22221C;
 }
 
 .service:hover {
@@ -232,7 +267,7 @@ footer {
 
 h2 {
     margin-bottom: 1rem;
-    color: #333;
+    color: #22221C;
     text-align: center;
 }
 
@@ -252,7 +287,7 @@ form {
 label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #22221C;
 }
 
 input, textarea {
@@ -267,7 +302,7 @@ button {
     padding: 0.7rem 1.2rem;
     border: none;
     border-radius: 4px;
-    color: #543E32;
+    color: #22221C;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -302,6 +337,7 @@ form {
 
 .success-message {
     color: green;
+    font-family: roboto, sans-serif;
     font-weight: bold;
     text-align: center;
 }
