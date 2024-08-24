@@ -99,6 +99,8 @@ h1 {
     font-family: roboto, sans-serif;
     font-size: 1.135rem;
     line-height: 1.6;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .img-fluid {
@@ -134,7 +136,6 @@ h1 {
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s ease;
-    background-color: #F5EBE0 !important;
 }
   
   /* Button hover effect */
@@ -192,7 +193,7 @@ button:hover {
 
 footer {
     flex-shrink: 0;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, .25);
     display: flex;
     flex-direction: row;
     justify-content: center;
