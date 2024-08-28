@@ -58,15 +58,28 @@
 
     <h2 class="heading">Book a Service</h2>
 
-    {% if message %}
-        <p class="success-message">{{ message }}</p>
-    {% endif %}
+{% if message %}
+    <p class="success-message">{{ message }}</p>
+{% endif %}
 
-    <form id="bookingForm" method="post" action="{% url 'services' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Submit Booking</button>
-    </form>
+<!-- Booking Form -->
+<form id="bookingForm" method="post" action="{% url 'services' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Submit Booking</button>
+</form>
+
+<!-- JavaScript to clear the form after submission -->
+<script>
+    // JavaScript to clear form after submission
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();  // Prevent the default form submission
+        // Assuming form submission via AJAX or any other method here
+        this.reset();  // Clear the form fields
+        alert('Thank you for your booking!');  // Optional success message
+    });
+</script>
+
 
     <script>
         document.getElementById('bookingForm').addEventListener('submit', function() {
