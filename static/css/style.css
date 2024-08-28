@@ -9,6 +9,8 @@ body {
 
 .heading {
     text-align: center;
+    font-family: whisper, sans-serif;
+    color: #543E32;
 }
 
 /* Slideshow */
@@ -86,6 +88,17 @@ body {
     display: block;
 }
 
+/* Services Page */
+.card-title {
+    font-size: 130%;
+    font-family: roboto, sans-serif;
+}
+
+.card-body {
+    padding-bottom: 20%;
+    color: #22221C;
+}
+
 /* About Us Page */
 
 h1 {
@@ -136,6 +149,7 @@ h1 {
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s ease;
+    background-color: #ddd;
 }
   
   /* Button hover effect */
@@ -212,7 +226,7 @@ footer {
 }
 
 .btn-link {
-    color: #F5EBE0!important;
+    color: #543E32!important;
     margin-bottom: -55px !important;
 }
 
@@ -279,12 +293,11 @@ h2 {
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    flex: 1 1 21%;
+    border: none;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #D6CCC2;
 }
 
 label {
@@ -325,9 +338,10 @@ button:hover {
 
 .service-item {
     flex: 1 1 21%;
-    border: 1px solid #ddd;
+    border: none;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #D6CCC2;
 }
 
 .service-item h2 {
