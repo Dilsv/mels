@@ -88,6 +88,12 @@ body {
     display: block;
 }
 
+.blog-text {
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    color: #22221C;
+}
+
 /* Services Page */
 .card-title {
     font-size: 150%;
@@ -125,7 +131,7 @@ h1 {
     line-height: 1.6;
     margin-left: 5rem;
     margin-right: 5rem;
-    color: #543E32;
+    color: #22221C;
 }
 
 .img-fluid {
@@ -136,6 +142,8 @@ h1 {
 }
 
 .container {
+    font-family: 'roboto', sans-serif;
+    color: #543E32;
     max-width: 960px;
     margin: 0 auto;
 }

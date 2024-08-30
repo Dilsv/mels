@@ -21,7 +21,7 @@ These users will be looking for:
 - An informative website, with information that is easy-to-find & concise
 - Current & up-to-date makeup services, with essential information such as price and time
 - A booking form to make reservation enquiries with the makeup artist
-- A way to contact the artist
+- A way to contact the artist with enquiries
 - The ability to make a user account to manage their reservations
 
 This website will offer all of these things whilst also allowing for intuitive navigation and comfortability of use. 
@@ -90,18 +90,17 @@ The website is made of four apps:
 #### Services 
 This is made up of 3 models - Customer, Service and Reservation. The Customer model has customer id as a primary key along with name, email and phone number fields. The Service model has the table id as a primary key along with service name. The Reservation model has reservation id as a primary key and holds the customer, requested date, and the status of the booking. The reservation model also has customer and table as foreign keys.
 
-#### Services 
 The services are made up for four models - Natural item, Glam item, Bridal item and HD item. Each item has an id as a primary key and name, description and price.
 
 ### Skeleton
 Home & Services Page:
-![Home Page Wireframe](static/images/gallery/readme.md/wireframes-1.png "Home Page and Services Page Wireframe")
+![Home and Services Page Wireframe](static/images/gallery/readme.md/wireframes-1.png "Home Page and Services Page Wireframe")
 
 About & Contact Page:
-![Menus Page Wireframe](static/images/gallery/readme.md/wireframes-2.png "About Page and Contact Page Wireframe")
+![About and Contact Page Wireframe](static/images/gallery/readme.md/wireframes-2.png "About Page and Contact Page Wireframe")
 
 Register/Login Page:
-![Food/Drinks Page Wireframe](static/images/gallery/readme.md/wireframes-3.pmg.png "Register and Login Page Wireframe")
+![Register and Login Page Wireframe](static/images/gallery/readme.md/wireframes-3.pmg.png "Register and Login Page Wireframe")
 
 Please note the actual website differs slightly from the original wireframes. 
 
@@ -118,9 +117,9 @@ I chose the fonts 'Whisper' & 'Roboto', I wanted a sleek font to use for heading
 ## Features
 
 ### Home page
-**Navigation bar**: The navigation bar has links to all the active pages for the user and are clearly labelled. The navigation bar has an 'active' style, when a nav link is hovered on to again clearly indicate to the user what they are about to click on. 
+**Navigation bar**: The navigation bar has links to all the active pages for the user and are clearly labelled. The navigation bar has an 'active' style, when a nav link is hovered on it or clicked on, it clearly indicates to the user what they are about to click on or what page they are currently on. 
 
-If the user is logged in then the navigation bar shows 'logout' for pages that only authorised/registered users can visit & use, they are: 'Manage Reservations', 'Update Details' & 'Logout'. Otherwise, the user will be given the option to 'Register' or 'Login'. This change in the navbar ensures users are directed to pages they can use, preventing any frustration and also prompting the user to sign up for an account. Furthermore, it makes it abundantly clear what the logged-in status is to the user. 
+If the user is logged in then the navigation bar shows 'logout' for pages that only authorised/registered users can visit & use, they are: 'Manage Reservations', 'Update Details' & 'Logout'. Otherwise, the user will be given the option to 'Register' or 'Login'. This change in the navbar ensures users are directed to pages they can use, preventing any frustration and also prompting the user to sign up for an account. Furthermore, it makes it abundantly clear what the logged-in status is to the user.
 
 ![]()
 

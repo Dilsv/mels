@@ -9,6 +9,7 @@ class BookingForm(forms.ModelForm):
             'date': forms.TextInput(attrs={'type': 'date'}),
             'time': forms.TextInput(attrs={'type': 'time'}),
             'message': forms.Textarea(attrs={'rows': 4}),
+
         }
         labels = {
             'name': 'Full Name',

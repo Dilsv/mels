@@ -1,22 +1,27 @@
 # services/views.py
 
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .forms import BookingForm
-from .models import Booking
 
+@login_required
 def services(request):
-    form = BookingForm()
     if request.method == 'POST':
         form = BookingForm(request.POST)
         if form.is_valid():
-            # Create a booking and associate it with the logged-in user
-            booking = form.save(commit=False)
-            booking.user = request.user
-            booking.save()
-            return render(request, 'services.html', {'form': form, 'message': 'Booking request submitted successfully!'})
-    
+            form.instance.user = user
+            # Save the form data to the database
+            form.save()
+            # Display a success message and redirect to the same page
+            return render(request, 'services.html', {'form': BookingForm(), 'message': 'Booking request submitted successfully!'})
+        else:
+            # If the form is not valid, render the page with errors
+            return render(request, 'services.html', {'form': form})
+    else:
+        form = BookingForm()
+
     return render(request, 'services.html', {'form': form})
+
 
 @login_required
 def booking_list(request):

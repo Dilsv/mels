@@ -11,7 +11,4 @@ class BookingAdmin (admin.ModelAdmin):
         'phone',
     )
 
-
-admin.site.register (
-    Booking, BookingAdmin
-)
+admin.site.register(Booking)
