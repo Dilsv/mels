@@ -2,14 +2,14 @@
 
 
 body {
-    font-family: roboto, sans-serif;
+    font-family: 'roboto', sans-serif;
     background-color: #D6CCC2;
     color: ##22221C;
 }
 
 .heading {
     text-align: center;
-    font-family: whisper, sans-serif;
+    font-family: 'whisper', sans-serif;
     color: #543E32;
 }
 
@@ -84,36 +84,48 @@ body {
 }
 
 .dropdown-menu.show {
-    font-family: roboto, sans-serif;
+    font-family: 'roboto', sans-serif;
     display: block;
 }
 
 /* Services Page */
 .card-title {
-    font-size: 130%;
-    font-family: roboto, sans-serif;
+    font-size: 150%;
+    font-family: 'whisper', sans-serif;
+    color: #543E32;
 }
 
 .card-body {
     padding-bottom: 20%;
-    color: #22221C;
+    color: #543E32;
+}
+
+.price-list {
+    text-align: center;
+    font-size: 90%;
+}
+
+.card-text {
+    font-size: 90%;
 }
 
 /* About Us Page */
 
 h1 {
-    font-family: whisper, sans-serif;
+    font-family: 'whisper', sans-serif;
     font-size: 4rem;
+    text-align: center;
     margin-bottom: 20px;
-    color: #22221C; /* Accent color for the title */
+    color: #543E32; /* Accent color for the title */
 }
 
 .about-text {
-    font-family: roboto, sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 1.135rem;
     line-height: 1.6;
     margin-left: 5rem;
     margin-right: 5rem;
+    color: #543E32;
 }
 
 .img-fluid {
@@ -134,8 +146,9 @@ h1 {
     }
 
     .about-text {
-        font-family: roboto, sans-serif;
+        font-family: 'roboto', sans-serif;
         font-size: 1rem;
+        color: #543E32;
     }
 }
 
@@ -147,6 +160,7 @@ h1 {
     border-radius: 4px;
     color: #543E32;
     font-size: 1rem;
+    font-family: 'roboto', sans-serif;
     cursor: pointer;
     transition: 0.3s ease;
     background-color: #ddd;
@@ -284,7 +298,7 @@ footer {
 h2 {
     font-size: 4rem;
     margin-bottom: 1rem;
-    color: #22221C;
+    color: #543E32;
     text-align: center;
 }
 
@@ -354,7 +368,7 @@ form {
 
 .success-message {
     color: green;
-    font-family: roboto, sans-serif;
+    font-family: 'roboto', sans-serif;
     font-weight: bold;
     text-align: center;
 }
