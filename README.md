@@ -12,7 +12,7 @@ This is a full-stack framework project built using Django, Python, HTML, and CSS
 ## Strategy
 Using the core UX principles I first started with Strategy, thinking about the target audience for this restaurant & the features they would benefit from.
 
-The target audience for 'Pepper Jack's' are:
+The target audience for 'touchedbymel' are:
 - 16-50 year olds
 - People who enjoy makeup and trends
 - People that enjoy taking care of their appearance
@@ -79,7 +79,7 @@ This website is designed for simplicity, with each page containing only essentia
 The website is made of four apps:
 
 1. Home - home display and fucntionality
-2. About - menu display
+2. About - about display
 3. Services - contact display and functionality
 4. Contact - reservations enquiries & customer management
 5. Register - registration for account management
@@ -274,10 +274,11 @@ I have chosen to manually test my website.
 #### Bugs
 
 [Slideshow] - The slideshow on Home Page does not flick through the images correctly when website is running.
-         - This is an ongoing issue.
-[Form Page] - The bug with the form page could not be resolved. If given the opportunity I will go back and debug the issue ensuring a better user experience.
-[HTML/CSS] - When deployed the HTML and CSS on the site failed to upload due to bugs. If given the opportunity, I intend on going back and ensuring the project runs fluently with all of its features functional.
-[Django Admin] - The backend admin site did not register or show the bookings that were made unless they were manually input. If given the opportunity, I intend on tracing the location of the stored.
+         This is an ongoing issue.
+[Forms] - The bug with the form page could not be resolved. If given the opportunity I will go back and debug the issue ensuring a better user experience. This is an ongoing issue.
+[HTML/CSS] - When deployed the HTML and CSS on the site failed to upload due to bugs. If given the opportunity, I intend on going back and ensuring the project runs fluently with all of its features functional. This is an ongoing issue.
+[Django Admin] - The backend admin site did not register or show the bookings that were made unless they were manually input. If given the opportunity, I intend on tracing the location of the stored. This is an ongoing issue.
+[Debugging] - When the developer sets the DEBUG value to true the website shows the images, HTML and CSS, however when set to False the website crashes. This is an ongoing issue.
 
 #### Improvements
 
@@ -356,16 +357,16 @@ In the Deploy tab:
 2. You can then choose to deploy the project manually or automatically, automatic deployment will generate a new application every time you push a change to Github, whereas manual deployment requires you to push the `Deploy Branch` button whenever you want a change made.
 3. Once you have chosen your deployment method and have clicked `Deploy Branch` your application will be built and you should see the below `View` button, click this to open your application:
 
-![](assets/images/heroku_deployed_image.png) ------------------------------------------------
+![](assets/images/) ------------------------------------------------
 
 ---
 ## Credits
 
 Throughout the process of building this website, I have used various sources online to help me fix bugs & tackle problems, in addition to various modules to build the functionality of this website:
 
-[Full-width pic header](https://startbootstrap.com/template/full-width-pics) ------------------------------------------------
+[Full-width pic header](https://startbootstrap.com/template/) ------------------------------------------------
 
-[Footer](https://getbootstrap.com/docs/5.1/examples/footers/) ------------------------------------------------
+[Footer](https://getbootstrap.com/docs/5.1/examples/) ------------------------------------------------
 
 [Navbar](https://getbootstrap.com/docs/5.0/components/navbar/) ------------------------------------------------
 
@@ -381,15 +382,11 @@ Throughout the process of building this website, I have used various sources onl
 
 [Updating form](https://stackoverflow.com/questions/42217334/django-get-data-and-edit-in-the-same-form-edit-in-one-place) ------------------------------------------------
 
-[Menus](https://github.com/daisygunn/grow-restaurant/tree/main/menus) ------------------------------------------------
 
-[Home page about text](https://thehawksmoor.com/locations/airstreet/) ------------------------------------------------
-
-
-I have used Aaron Beale's The Diplomat resturant project as a guideline when creating the menus app and for general guidance throughout (https://github.com/ArronBeale/CI_PP4_the_diplomat)
+I have used Aaron Beale's The Diplomat resturant project as a general guidance throughout (https://github.com/ArronBeale/CI_PP4_the_diplomat)
 
 ---
 ## Acknowledgements
 
-I would like to thank my course mentor Mo Shami for his support and guidance throughout the course of the project and my peers Emma Charles-Wilson, Vasileios Tsimourdagkas and Harry Dhillon for their support & feedback.
+I would like to thank my course mentor Mo Shami for his support and guidance throughout the course of the project and my peers Emma Charles-Wilson and Vasileios Tsimourdagkas for their support & feedback.
 ---
