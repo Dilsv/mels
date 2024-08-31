@@ -2,7 +2,7 @@
 
 ![](assets/images/responsive.jpg)
 
-[Live application can be found here]()
+[Live application can be found here](https://mels-18c9cbd51cf1.herokuapp.com/)
 
 This is a full-stack framework project built using Django, Python, HTML, and CSS. This is a makeup booking website designed to display services to customers & allow them to make/edit/delete reservations. This project has been built for educational purposes.
 
@@ -125,38 +125,38 @@ If the user is logged in then the navigation bar shows 'logout' for pages that o
 
 The navigation bar is fully responsive and collapses on mobile screens to a sandwich icon, this easily allows the user to continue to use the navigation links without the need to press back on the browser. 
 
-![](assets/images/mobile-hp.png) -------------------------------------------
+![](assets/images/) -------------------------------------------
 
 **About images with links**:
 
-![](assets/images/menus-hp.png) -------------------------------------------
+![](assets/images/) -------------------------------------------
 
 **Footer**: The footer displays links to social accounts. 
 
-![](assets/images/footer.png) -------------------------------------------
+![](assets/images/) -------------------------------------------
 
 ### Services
-**Services page**: This page displays the services in the restaurant, it has a card to each service: Natural, Glam, HD and Bridal
+**Services page**: This page displays the services that the makeup artist offers, it has a card to each service: Natural, Glam, HD and Bridal
 
-![](assets/images/menus-fd.png) -------------------------------------------
+![](assets/images/) -------------------------------------------
 
 
 I have chosen to display the services on th same page as the booking form so that the user is able to sign up/sign in and book the service they want as easily as possible, this combination prevents information overload as the pages aren't full of multiple services.
 
-![](assets/images/food.png) -------------------------------------------
+![](assets/images/) -------------------------------------------
 
 ### Bookings
 **Booking form**: This form consists of the customer & reservation model forms, they are displayed together to appear as one to make it simple for the user.
 
 If the user is logged in and they exist in the customer model then their name & email address are pre-populated, this has been done in an effort to improve their overall experience.
 
-![](assets/images/reservation_prepop.png) -------------------------------------------
+![](assets/images/) -------------------------------------------
 
 If they are not yet in the customer model then only their email address is added using the email from their user account.
 
-If the user is not logged in at all then the form appears blank, as the form requires the phone number to be entered in the +44 format I have added this placeholder to the phone number input field to try and help the user.
+If the user is not logged in at all then the form appears blank, as the form requires the phone number to be entered in no specific format I have added this placeholder to the phone number input field to try and help the user.
 
-![](assets/images/reservations_blank.png) -------------------------------------------
+![](assets/images/) -------------------------------------------
 
 **Manage Reservations**: Logged in users are able to view the 'manage bookings' page, on this page they are shown any booking enquiries they have previously made using the email address associated with their user account. -------------------------------------------
 
@@ -164,37 +164,35 @@ The reservation ID is displayed at the top of the reservation item so they can b
 
 There are also edit & delete buttons, users are able to edit or delete existing reservations they have that are either 'confirmed' or 'pending'. 
 
-![](assets/images//manage_reservations.png) -------------------------------------------
+![](assets/images/) -------------------------------------------
 
-I decided that reservations with a date in the past would display with a status of 'expired' and would not be able to be edited or deleted as this could cause confusion for the user and also the admin user, therefore the edit & delete buttons do not display under these reservations. Reservations with a 'rejected' status can also not be changed for the same reasons. -------------------------------------------
+I decided that bookings with a date in the past would display with a status of 'expired' and would not be able to be edited or deleted as this could cause confusion for the user and also the admin user, therefore the edit & delete buttons do not display under these reservations. Reservations with a 'rejected' status can also not be changed for the same reasons. -------------------------------------------
 
-The status of 'expired' doesn't get pushed to the model and is used only when displaying the reservations to the user. -------------------------------------------
+The status of 'expired' doesn't get pushed to the model and is used only when displaying the bookings to the user. -------------------------------------------
 
-Defensive programme has been used to prevent users editing/deleting reservations that they aren't meant to, if a user tried (by adding the reservation ID in the URL) they would be redirected back to manage reservations. -------------------------------------------
+![](assets/images/) -------------------------------------------
 
-![](assets/images/expired-reservation.png) -------------------------------------------
-
-![](assets/images/rejected.png) -------------------------------------------
+![](assets/images/) -------------------------------------------
 
 **Edit Reservation**: This page simply displays the reservation form pre-populated using the reservation instance, the user is able to change the date, time or number of guests and resubmit the form. After resubmitting the user is redirected back to the 'Manage Reservations' page and a success message is displayed showing which reservation was edited. 
 
-![](assets/images/edit-restervation.png)
+![](assets/images/)
 
-**Delete Reservations**: This page simply displays the reservation selected with all of its information, the user presses 'Cancel Reservation' and a modal pop's up for the user to confirm the cancellation, explaining that this cannot be undone. If the user chooses 'Cancel it' the reservation will be deleted from the model. After confirming the user is redirected back to the 'Manage Reservations' page and a success message is displayed showing which reservation was edited. 
+**Delete Reservations**: This page simply displays the booking selected with all of its information, the user presses 'Cancel Reservation' and a modal pop's up for the user to confirm the cancellation, explaining that this cannot be undone. If the user chooses 'Cancel it' the reservation will be deleted from the model. After confirming the user is redirected back to the 'Manage Reservations' page and a success message is displayed showing which reservation was edited. 
 
-![](assets/images/cancel-reservation.png) 
+![](assets/images/) ---------------------------------------------
 
-![](assets/images/cancel-reservation-message.png)
+![](assets/images/) ---------------------------------------------
 
 **Update customer details**: A logged-in user can also update their phone number or full name that is stored in the customer model, this can be done from the 'Update Details' link in the navbar. This page simply displays the customer form but in future I would have liked to have added a feature that enables the user from editing the email field as this can cause problems with the customer model. 
 
-![](assets/images/edit-details.png)
+![](assets/images/) ---------------------------------------------
 
 
 ### Contact Form
 **Contact form**: All users are able to submit a contact form from the 'Contact Us' page, this sends an email to the website owner using Google SMTP. Having a way to communicate with the website owner/restaurant manager is a helpful tool for the user and creates a platform for communication to strengthen the relationships with customers.
 
-![](assets/images/contact-form.png)
+![](assets/images/) ---------------------------------------------
 
 ---
 ## Technologies Used
@@ -250,26 +248,26 @@ I have used several technologies that have enabled this design to work:
 I have chosen to manually test my website.
 
 ### Code Validation
-All of my code has been validated using an online validator specific to the language, all code now passes with zero errors. 
+
 
 - [W3C Markup Validation Service](https://validator.w3.org/) 
-    - Used to validate all HTML code written and used in this webpage.
-    - This passes with minor errors
+    - Could not but intend to validate all HTML code written and used in this webpage.
+    - 
 
-![](assets/images/html_report.png)
+![](assets/images/) ---------------------------------------------
 
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
-    - Used to validate all CSS code written and used in this webpage.
+    - Could not but intend to validate all CSS code written and used in this webpage.
 
-![](assets/images/css_report.png)
+![](assets/images/) ---------------------------------------------
 
 - [Pep8](http://pep8online.com/)
-    - Used to test my code for any issues or errors.
+    - Could not utilise but intend to test my code for any issues or errors.
 
 
 ### Manual Testing
 
-I have tested this project manually myself and have also had it peer-reviewed & tested by friends and family on multiple devices and screen sizes.
+
 
 ### Bugs, Fixes and Improvements
 
@@ -277,15 +275,20 @@ I have tested this project manually myself and have also had it peer-reviewed & 
 
 [Slideshow] - The slideshow on Home Page does not flick through the images correctly when website is running.
          - This is an ongoing issue.
+[Form Page] - The bug with the form page could not be resolved. If given the opportunity I will go back and debug the issue ensuring a better user experience.
+[HTML/CSS] - When deployed the HTML and CSS on the site failed to upload due to bugs. If given the opportunity, I intend on going back and ensuring the project runs fluently with all of its features functional.
+[Django Admin] - The backend admin site did not register or show the bookings that were made unless they were manually input. If given the opportunity, I intend on tracing the location of the stored.
 
 #### Improvements
 
-There are some aspects of UX and functionality that I would have liked to improve. 
+There are aspects of UX and functionality that I would like to improve. 
 
-- First being the date field on the reservation form. There is time slot or text that prompts the user on what format they should enter the date. This could be confusing and not be a very good user experience.
-- Secondly I think the colour scheme could been used more frequently. Some of the colours against their chosen backgrounds could be hard to read.
+- First being the data field on the bookings form. It doesn't allow users to choose how many guests will be joining (for group bookings). This could be confusing and not be a very good user experience.
+- Secondly I would have liked to use my colour pallet differently. For example, giving each of the service cards a different hue for them to stand out.
 - Thirdly I would have liked for users to be able to click onto the specific service and book directly through the service card which would prohibit the user from having to manually choose.
-- Lastly I would have liked to have provided some sort of functionality that prevents users from creating a booking that is in the past.
+- Fourth I would have liked to have provided some sort of functionality that prevents users from creating a booking that is in the past.
+- Fifth, I would have liked to make sure the slideshow was in correct working order to provide the user wit ha better experience.
+- Sixth if given the chance, I would complete my homepage blog section to provide the user with an experience with the website theyre using.
 
 
 ---
@@ -295,7 +298,7 @@ The master branch of this repository has been used for the deployed version of t
 
 ### Using Github & Gitpod
 
-To deploy my Django application, I had to use the [Code Institute Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template).
+To deploy my Django application correctly, I had the intention to use the [Code Institute Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template).
 
 - Click the `Use This Template` button.
 - Add a repository name and brief description.
