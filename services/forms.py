@@ -1,10 +1,12 @@
 from django import forms
 from .models import Booking  # Import the Booking model
 
+
 class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
-        fields = ['name', 'email', 'phone', 'service', 'date', 'time', 'message']  # Specify the fields to be included in the form
+        fields = ['name', 'email', 'phone', 'service', 'date', 'time',
+                  'message']
         widgets = {
             'date': forms.TextInput(attrs={'type': 'date'}),
             'time': forms.TextInput(attrs={'type': 'time'}),
