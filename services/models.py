@@ -1,7 +1,8 @@
 # services/models.py
 
 from django.db import models
-from django.contrib.auth.models import User  # Import User model
+from django.contrib.auth.models import User
+
 
 class Booking(models.Model):
     SERVICE_CHOICES = [
@@ -10,9 +11,8 @@ class Booking(models.Model):
         ('bridal', 'Bridal Makeup'),
         ('hd', 'HD Makeup'),
     ]
-    
-    # Associate booking with a user
-    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Add ForeignKey to User
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     name = models.CharField(max_length=100)
     email = models.EmailField()
