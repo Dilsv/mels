@@ -3,16 +3,38 @@
 {% load static %}
 
 {% block content %}
-<div class="slideshow">
-    <img src="{% static '/images/gallery/slide2.JPG' %}" alt="Slide 1">
-    <img src="{% static '/images/gallery/slide3.JPG' %}" alt="Slide 2">
-    <img src="{% static '/images/gallery/slide4.JPG' %}" alt="Slide 3">
-    <img src="{% static '/images/gallery/slide5.JPG' %}" alt="Slide 3">
-    <img src="{% static '/images/gallery/slide6.JPG' %}" alt="Slide 3">
-    <img src="{% static '/images/gallery/slide8.JPG' %}" alt="Slide 3">
-    <img src="{% static '/images/gallery/slide9.JPG' %}" alt="Slide 3">
-    <img src="{% static '/images/gallery/slide10.JPG' %}" alt="Slide 3">
-</div>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="{% static '/images/gallery/slide1.JPG' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/gallery/slide2.JPG' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/gallery/slide4.JPG' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/gallery/slide5.JPG' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
 
 <h3 class="blog-text">ACHIEVE A GLOWING COMPLEXION</h3>
 <br>
