@@ -93,13 +93,10 @@ This is made up of 3 models - Customer, Service and Reservation. The Customer mo
 The services are made up for four models - Natural item, Glam item, Bridal item and HD item. Each item has an id as a primary key and name, description and price.
 
 ### Skeleton
-Home & Services Page:
 ![Home and Services Page Wireframe](static/images/gallery/readme.md/wireframes-1.png "Home Page and Services Page Wireframe")
 
-About & Contact Page:
 ![About and Contact Page Wireframe](static/images/gallery/readme.md/wireframes-2.png "About Page and Contact Page Wireframe")
 
-Register/Login Page:
 ![Register and Login Page Wireframe](static/images/gallery/readme.md/wireframes-3.pmg.png "Register and Login Page Wireframe")
 
 Please note the actual website differs slightly from the original wireframes. 
