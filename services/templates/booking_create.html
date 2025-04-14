@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Book an Appointment{% endblock %}
+
+{% block content %}
+<p class="h3 text-center">Book an Appointment</p>
+<p class="text-center mb-0">Fill out the form below to book your appointment.</p>
+
+{% if message %}
+<p class="success-message">{{ message }}</p>
+{% endif %}
+
+{% if error %}
+<p class="error-message">{{ error }}</p>
+{% endif %}
+
+{% if form.non_field_errors %}
+<div class="alert alert-danger">
+    {{ form.non_field_errors }}
+</div>
+{% endif %}
+
+<div class="container px-5">
+    <form method="post" class="form">
+        
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+{% endblock %}
