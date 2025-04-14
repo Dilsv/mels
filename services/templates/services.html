@@ -5,78 +5,79 @@
 {% load static %}
 
 {% block content %}
-    <h1 class="heading">Our Services</h1>
+<h1 class="heading">Our Services</h1>
 
-    <div class="container">
-        <!-- Bootstrap row for the services grid -->
-        <div class="row">
-            <!-- Service Item 1 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="service-item card">
-                    <img src="{% static 'images/gallery/services-page/natural.jpg' %}" class="card-img-top" alt="Natural Makeup">
-                    <div class="card-body">
-                        <h2 class="card-title">Natural</h2>
-                        <p class="card-text">Enhance your natural beauty with our gentle and subtle makeup services. Perfect for a fresh and effortless look.</p>
-                        <p class="price-list">Prices from £90.00</p>
-                    </div>
+<div class="container">
+    <!-- Bootstrap row for the services grid -->
+    <div class="row">
+        <!-- Service Item 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="service-item card">
+                <img src="{% static 'images/gallery/services-page/natural.jpg' %}" class="card-img-top"
+                    alt="Natural Makeup">
+                <div class="card-body">
+                    <h2 class="card-title">Natural</h2>
+                    <p class="card-text">Enhance your natural beauty with our gentle and subtle makeup services. Perfect
+                        for a fresh and effortless look.</p>
+                    <p class="price-list">Prices from £90.00</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Service Item 2 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="service-item card">
-                    <img src="{% static 'images/gallery/services-page/glam.webp' %}" class="card-img-top" alt="Natural Makeup">
-                    <div class="card-body">
-                        <h2 class="card-title">Glam</h2>
-                        <p class="card-text">Make a statement with our bold and glamorous makeup. Ideal for special events and occasions where you want to stand out.</p>
-                        <p class="price-list">Prices from £120.00</p>
-                    </div>
+        <!-- Service Item 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="service-item card">
+                <img src="{% static 'images/gallery/services-page/glam.webp' %}" class="card-img-top"
+                    alt="Natural Makeup">
+                <div class="card-body">
+                    <h2 class="card-title">Glam</h2>
+                    <p class="card-text">Make a statement with our bold and glamorous makeup. Ideal for special events
+                        and occasions where you want to stand out.</p>
+                    <p class="price-list">Prices from £120.00</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Service Item 3 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="service-item card">
-                    <img src="{% static 'images/gallery/services-page/bridal.webp' %}" class="card-img-top" alt="Natural Makeup">
-                    <div class="card-body">
-                        <h2 class="card-title">Bridal</h2>
-                        <p class="card-text">Look radiant on your special day with our bridal makeup services. Tailored to match your wedding theme and personal style.</p>
-                        <p class="price-list">Prices from £250.00</p>
-                    </div>
+        <!-- Service Item 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="service-item card">
+                <img src="{% static 'images/gallery/services-page/bridal.webp' %}" class="card-img-top"
+                    alt="Natural Makeup">
+                <div class="card-body">
+                    <h2 class="card-title">Bridal</h2>
+                    <p class="card-text">Look radiant on your special day with our bridal makeup services. Tailored to
+                        match your wedding theme and personal style.</p>
+                    <p class="price-list">Prices from £250.00</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Service Item 4 -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="service-item card">
-                    <img src="{% static 'images/gallery/services-page/hd.jpeg' %}" class="card-img-top" alt="Natural Makeup">
-                    <div class="card-body">
-                        <h2 class="card-title">HD</h2>
-                        <p class="card-text">Achieve a flawless look with our HD makeup, designed to stay perfect under high-definition cameras and lighting.</p>
-                        <p class="price-list">Prices from £180.00</p>
-                    </div>
+        <!-- Service Item 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="service-item card">
+                <img src="{% static 'images/gallery/services-page/hd.jpeg' %}" class="card-img-top"
+                    alt="Natural Makeup">
+                <div class="card-body">
+                    <h2 class="card-title">HD</h2>
+                    <p class="card-text">Achieve a flawless look with our HD makeup, designed to stay perfect under
+                        high-definition cameras and lighting.</p>
+                    <p class="price-list">Prices from £180.00</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <h2 class="heading">Book a Service</h2>
+<a href="{% url 'booking_create' %}" class="heading">Book a New Appointment</a>
+<a class="heading" href="/services/bookings/">MY BOOKINGS</a>
+</div>
 
-{% if message %}
-    <p class="success-message">{{ message }}</p>
-{% endif %}
 
-<!-- Booking Form -->
-<form id="bookingForm" method="post" action="{% url 'services' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="btn btn-primary">Submit Booking</button>
-</form>
 
-<!-- JavaScript to clear the form after submission -->
+<!-- JavaScript to clear the form after submission
 <script>
     // JavaScript to clear form after submission
-    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    document.getElementById('bookingForm').addEventListener('submit', function (e) {
         e.preventDefault();  // Prevent the default form submission
         // Assuming form submission via AJAX or any other method here
         this.reset();  // Clear the form fields
@@ -85,11 +86,11 @@
 </script>
 
 
-    <script>
-        document.getElementById('bookingForm').addEventListener('submit', function() {
-            setTimeout(function() {
-                document.getElementById('bookingForm').reset();
-            }, 1000); // Adjust the delay time if needed
-        });
-    </script>
+<script>
+    document.getElementById('bookingForm').addEventListener('submit', function () {
+        setTimeout(function () {
+            document.getElementById('bookingForm').reset();
+        }, 1000); // Adjust the delay time if needed
+    });
+</script> -->
 {% endblock %}

@@ -1,16 +1,54 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<h1 class="heading">Your Bookings</h1>
+
+{% if message %}
+<p class="success-message">{{ message }}</p>
+{% endif %}
+
+{% if error %}
+<p class="error-message">{{ error }}</p>
+{% endif %}
+
+{% if form.non_field_errors %}
+<div class="alert alert-danger">
+    {{ form.non_field_errors }}
+</div>
+{% endif %}
 
 <h2>Your Bookings</h2>
 
-{% if bookings %}
-    <ul>
+<div class="d-flex justify-content-around align-items-center mb-3">
+    <a href="{% url 'booking_create' %}" class="btn btn-secondary ms-auto me-1">Book a New Appointment</a>
+</div>
+
+<div class="container px-5">
+    {% if bookings %}
+    <ul class="list-unstyled">
         {% for booking in bookings %}
-            <li>
-                {{ booking.service }} on {{ booking.date }} at {{ booking.time }}
-                - <a href="{% url 'booking_edit' booking.id %}">Edit</a>
-                - <a href="{% url 'booking_delete' booking.id %}">Delete</a>
-            </li>
+        <li class="d-flex justify-content-around align-items-center border-bottom mb-2 row">
+            <span class="p-1">Booking ID: {{ booking.id }}</span>
+            <span class="p-1">Service: {{ booking.get_service_display }}</span>
+            <span class="p-1">Date: {{ booking.date }} at {{ booking.time }}</span>
+
+            <span class="p-1">
+                <a href="{% url 'booking_edit' booking.id %}" class="text-decoration-none btn-edit">Edit</a>
+            </span>
+            <span class="p-1">
+                <a href="{% url 'booking_delete' booking.id %}" class="text-decoration-none">Delete</a>
+            </span>
+        </li>
         {% endfor %}
     </ul>
-{% else %}
+    {% else %}
     <p>You have no bookings.</p>
-{% endif %}
+    {% endif %}
+</div>
+
+
+
+
+{% endblock %}
