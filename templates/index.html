@@ -1,60 +1,158 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
-{% load static %}
+<div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="{% static '/images/gallery/slide1.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide1"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static '/images/gallery/slide2.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide2"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static '/images/gallery/slide3.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide3"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static '/images/gallery/slide4.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide4"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static '/images/gallery/slide5.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide5"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static '/images/gallery/slide6.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide6"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static '/images/gallery/slide7.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide7"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static '/images/gallery/slide8.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide8"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static '/images/gallery/slide9.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide9"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="{% static '/images/gallery/slide10.JPG' %}"
+        class="d-block w-100"
+        style="height: 800px; object-fit: contain"
+        alt="Slide9"
+      />
+    </div>
+  </div>
+</div>
 
-{% block content %}
+<h3 class="blog-text mt-5">ACHIEVE A GLOWING COMPLEXION</h3>
+<br />
+<p class="about-text text-center">
+    Originally launched in March 2013, Touchedbymel began as a passion 
+    project with a simple yet powerful mission: to promote self-confidence 
+    in women through the art of natural beauty. Over time, this vision has 
+    grown into a philanthropic business dedicated to creating meaningful impact. 
+    Today, Touchedbymel is more than just a beauty brand – it is a platform for 
+    empowerment, supporting women who aspire to gain independence and re-enter 
+    the workforce. Through a blend of makeup artistry, personal development coaching, 
+    and confidence-building initiatives, the organisation helps women realise their 
+    full potential, both personally and professionally.
+</p>
 
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="{% static '/images/gallery/slide1.JPG' %}" class="d-block w-100" alt="...">
+<div class="row content justify-content-center">
+  <div class="col-sm-6 col-lg-4 col-xl-3 text-center">
+    <a href="{% url 'services' %}" class="btn">Book Now</a>
+  </div>
+</div>
+
+<br />
+<h3 class="blog-text text-center">MUA'S GLOW-TO ITEMS THIS SUMMER!</h3>
+<br />
+<p class="about-text text-center">
+  To help you achieve that flawless summer glow with a soft, dewy, and fresh
+  makeup look, we've curated our top ten must-have MUA products for this
+  season. Even better, they're top rated products of Vogue's beauty team in 2025!
+</p>
+
+<div class="container text-center mt-4">
+    <div class="row justify-content-center">
+      <div class="col-4 col-md-3 mb-4">
+        <a href="https://www.clinique.co.uk/product/1606/5416/makeup/mascara/high-impacttm-mascara?shade=Black_Honey" target="_blank" rel="noopener noreferrer">
+          <img src="{% static 'images/gallery/beauty1-.jpg' %}" class="img-fluid rounded" alt="Beauty-1">
+          <p class="container mt-2">Clinique Black Honey High Impact Mascara</p>
+        </a>
       </div>
-      <div class="carousel-item">
-        <img src="{% static '/images/gallery/slide2.JPG' %}" class="d-block w-100" alt="...">
+  
+      <div class="col-4 col-md-3 mb-4">
+        <a href="https://tartecosmetics.com/EU/en_GB/cc-undereye-corrector-549.html?srsltid=AfmBOoojlHMlWKuVMLFETk0N1_CdfBYDL_aB1VEqsNX4rjRIu6O-lPXe" target="_blank" rel="noopener noreferrer">
+          <img src="{% static 'images/gallery/beauty2-.jpg' %}" class="img-fluid rounded" alt="Product 2">
+          <p class="container mt-2">Tarte Colored Clay CC Undereye Corrector</p>
+        </a>
       </div>
-      <div class="carousel-item">
-        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="{% static '/images/gallery/slide4.JPG' %}" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="{% static '/images/gallery/slide5.JPG' %}" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="{% static '/images/gallery/slide3.JPG' %}" class="d-block w-100" alt="...">
+  
+      <div class="col-4 col-md-3 mb-4">
+        <a href="https://www.clarins.co.uk/lip-comfort-oil/CS00555678.html" target="_blank" rel="noopener noreferrer">
+          <img src="{% static 'images/gallery/beauty3-.jpg' %}" class="img-fluid rounded" alt="Product 3">
+          <p class=" container mt-2">Clarins Lip Comfort Oil</p>
+        </a>
       </div>
     </div>
   </div>
 
-<h3 class="blog-text">ACHIEVE A GLOWING COMPLEXION</h3>
-<br>
-<p class="about-text">Originally launched in March 2013, Touchedbymel 
-    was born to promote confidence in women through natural beauty. This 
-    initiative has since evolved into a philanthropic project 
-    business. The organisation is dedicated to empowering women who 
-    want to be independent and to enter the workforce by harnessing 
-    the power of makeup, coaching, and confidence.</p>
-<div class="row content justify-content-center">
-    <div class="col-sm-6 col-lg-4 col-xl-3 text-center">
-<a href="{% url 'services' %}" class="btn">Book Now</a>
+<br />
+<h3 class="blog-text text-center">COMING SOON: THE FILLER ROOM</h3>
+<br />
+<p class="about-text text-center">
+  We’re excited to announce the upcoming launch of
+  <strong>The Filler Room</strong> – a new aesthetics service offering
+  non-surgical treatments including <em>Botox</em> and
+  <em>dermal fillers</em>. <br /><br />
+  Backed by a newly obtained aesthetic qualification, this service will be
+  delivered with the highest standard of care and professionalism, ensuring
+  safe and effective results for every client. <br /><br />
+  More details, including treatment availability and booking information, will
+  be shared soon.
+</p>
+
+  {% endblock %}
 </div>
-<br>
-
-<h3 class="blog-text">MUA'S GLOW-TO ITEMS THIS SUMMER!</h3>
-<br>
-<p class="about-text">To help you achieve that flawless summer glow with a soft, 
-    dewy, and fresh makeup look, we've curated our top ten 
-    must-have MUA products for this season. Even better, they're 
-    vegan, cruelty-free, and budget-friendly!</p>
-
-{% endblock %}
