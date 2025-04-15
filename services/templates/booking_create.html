@@ -25,7 +25,7 @@
         
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" className={`${btnStyles.Button} ${btnStyles.Bright} mr-3`>Submit</button>
     </form>
 </div>
 
