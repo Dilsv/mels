@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-<h1 class="heading">Your Bookings</h1>
+<h1 class="heading mt-5">Your Bookings</h1>
 
 {% if message %}
 <p class="success-message">{{ message }}</p>
@@ -19,10 +19,8 @@
 </div>
 {% endif %}
 
-<h2>Your Bookings</h2>
-
 <div class="d-flex justify-content-around align-items-center mb-3">
-    <a href="{% url 'booking_create' %}" class="btn btn-secondary ms-auto me-1">Book a New Appointment</a>
+    <a href="{% url 'booking_create' %}" class="btn btn-color ms-auto me-1">Book a New Appointment</a>
 </div>
 
 <div class="container px-5">
@@ -35,10 +33,10 @@
             <span class="p-1">Date: {{ booking.date }} at {{ booking.time }}</span>
 
             <span class="p-1">
-                <a href="{% url 'booking_edit' booking.id %}" class="text-decoration-none btn-edit">Edit</a>
+                <a href="{% url 'booking_edit' booking.id %}" class="btn btn-color ms-auto me-1 my-1">Edit</a>
             </span>
             <span class="p-1">
-                <a href="{% url 'booking_delete' booking.id %}" class="text-decoration-none">Delete</a>
+                <a href="{% url 'booking_delete' booking.id %}" class="btn btn-color ms-auto me-1 my-1">Delete</a>
             </span>
         </li>
         {% endfor %}
