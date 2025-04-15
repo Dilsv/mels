@@ -1,24 +1,35 @@
-{% extends 'base.html' %}
-
-{% load static %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <div class="container my-5">
-    <div class="row align-items-center">
-        <!-- Image on the left -->
-        <div class="col-md-6">
-            <img src="static/images/gallery/about-page/about.JPG" alt="Makeup Image" class="img-fluid rounded shadow">
-        </div>
-        <!-- Text on the right -->
-        <div class="col-md-6">
-            <h1>About Us</h1>
-            <p class="about-text">
-                Touched by Mel was founded out of a profound passion for colour and transformation,
-                with a commitment to enhancing each individual's natural beauty. I specialise in 
-                crafting bespoke makeup looks that perfectly complement your unique style,
-                ensuring you feel confident and radiant for any occasion.
-            </p>
-        </div>
+  <div class="row align-items-center justify-content-center">
+    <!-- Image Section -->
+    <div class="col-md-5 text-end">
+      <img
+        src="{% static 'images/gallery/about.jpg' %}"
+        class="img-fluid rounded shadow-sm"
+        style="max-width: 100%; width: 500%; height: auto; margin-right: 1rem"
+        alt="Beauty-1"
+      />
     </div>
+
+    <!-- Text Section -->
+    <div class="col-md-10 ps-md-3">
+      <h1 class="mb-5 text-center mt-5">About Us</h1>
+      <p class="about-text text-md-start text-center">
+        Touchedbymel was born from a lifelong passion for beauty, colour, and
+        the artistry of transformation. With just a few years' experience in the
+        industry, the brand has evolved into a trusted name, known for its
+        meticulous attention to detail and personalised approach. Every client
+        experience is designed to feel exclusive, elegant, and empowering —
+        whether you’re preparing for a special occasion, a photoshoot, or simply
+        indulging in self-care. Using premium products and refined techniques, I
+        specialise in creating bespoke looks that enhance your natural features
+        while reflecting your individual style. At the heart of Touchedbymel is
+        a deep commitment to helping clients feel confident, radiant, and
+        unapologetically themselves. From the initial consultation to the final
+        touch-up, the experience is more than makeup — it’s about celebrating
+        beauty, passion, and personal empowerment in every form.
+      </p>
+    </div>
+  </div>
 </div>
 {% endblock %}
