@@ -1,20 +1,28 @@
 {% extends 'base.html' %}
-
 {% load static %}
-
 {% block content %}
+
 <h2 class="heading mt-5">Delete Booking</h2>
 
-<p>Are you sure you want to delete the booking for {{ booking.service }} on {{ booking.date }}?</p>
+<p class="text-center mt-5">
+  Are you sure you want to delete the booking for {{ booking.service }} on {{
+  booking.date }}?
+</p>
 
 <form method="post">
-    {% csrf_token %}
+  {% csrf_token %}
+  <div class="text-center">
     <button type="submit" class="btn btn-danger">Delete</button>
-    <a href="{% url 'booking_list' %}" class="btn btn-color ms-auto me-1">Cancel</a>
+    <a href="{% url 'booking_list' %}" class="btn btn-color ms-auto me-1"
+      >Cancel</a
+    >
+  </div>
 </form>
 
 {% if message %}
 <p class="success-message">{{ message }}</p>
 {% endif %}
-<a href="{% url 'booking_list' %}" class="btn btn-color ms-auto me-1">Back to Bookings</a>
+<a href="{% url 'booking_list' %}" class="btn btn-color ms-auto me-1"
+  >Back to Bookings</a
+>
 {% endblock %}
