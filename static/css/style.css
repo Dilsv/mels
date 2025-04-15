@@ -30,8 +30,6 @@ body {
   }
 }
 
-/* Navbar */
-
 .navalert-container {
   position: absolute;
   top: 0;
@@ -84,7 +82,6 @@ body {
   color: #543e32;
 }
 
-/* Services Page */
 .card-title {
   font-size: 150%;
   font-family: "pacifico", sans-serif;
@@ -106,20 +103,18 @@ body {
 }
 
 .heading-title {
-    font-family: "roboto", sans-serif;
-    font-size: 1rem;
-    color: #543e32;
-    text-align: center;
+  font-family: "roboto", sans-serif;
+  font-size: 1rem;
+  color: #543e32;
+  text-align: center;
 }
-
-/* About Us Page */
 
 h1 {
   font-family: "pacifico", sans-serif;
   font-size: 4rem;
   text-align: center;
   margin-bottom: 20px;
-  color: #543e32; /* Accent color for the title */
+  color: #543e32;
 }
 
 .about-text {
@@ -157,8 +152,6 @@ h1 {
   }
 }
 
-/* Book Now Button */
-
 .btn-footer {
   padding: 0.7rem 1.2rem;
   border: none;
@@ -174,44 +167,35 @@ h1 {
   padding: 0.7rem 1.2rem;
   border: none;
   border-radius: 4px;
-  color: #F5EBE0;
+  color: #f5ebe0;
   font-size: 1rem;
   font-family: "roboto", sans-serif;
   cursor: pointer;
   transition: 0.3s ease;
-  background-color: #543E32;
+  background-color: #543e32;
 }
 
 .btn-delete {
-    padding: 0.7rem 1.2rem;
-    border: none;
-    border-radius: 4px;
-    color: #F5EBE0;
-    font-size: 1rem;
-    font-family: "roboto", sans-serif;
-    cursor: pointer;
-    transition: 0.3s ease;
-    background-color: #543E32;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  color: #f5ebe0;
+  font-size: 1rem;
+  font-family: "roboto", sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: #543e32;
 }
 
 .btn-color {
-    background-color: #543e32;
-    color: #fff;
+  background-color: #543e32;
+  color: #fff;
 }
-
-/* Social icons */
 
 .social-icon {
   height: 2rem;
   margin: 1rem;
 }
-
-/* Home page quote */
-.quote {
-  position: center;
-}
-
-/* Containers */
 
 .callout-container {
   height: 100vh;
@@ -240,8 +224,6 @@ h1 {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-
-/* Footer - Social media links */
 
 footer {
   flex-shrink: 0;
@@ -272,8 +254,6 @@ footer {
   min-height: 120vh;
 }
 
-/* Services Section */
-
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -285,7 +265,7 @@ footer {
 .service {
   flex: 1 1 calc(50% - 1.5rem);
   display: flex;
-  align-items: center; /* Align items vertically */
+  align-items: center;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;
@@ -295,11 +275,11 @@ footer {
 }
 
 .service img {
-  max-width: 120px; /* Adjust as needed */
-  max-height: 120px; /* Adjust as needed */
+  max-width: 120px;
+  max-height: 120px;
   object-fit: cover;
-  border-radius: 4px; /* Optional: rounded corners for the image */
-  margin-right: 1rem; /* Space between image and text */
+  border-radius: 4px;
+  margin-right: 1rem;
 }
 
 .service-info {
@@ -368,8 +348,6 @@ button {
 button:hover {
   background-color: #d6ccc2;
 }
-
-/* assets/css/style.css */
 
 .services-grid {
   display: flex;
