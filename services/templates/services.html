@@ -5,7 +5,7 @@
 {% load static %}
 
 {% block content %}
-<h1 class="heading">Our Services</h1>
+<h1 class="heading mt-5">Our Services</h1>
 
 <div class="container">
     <!-- Bootstrap row for the services grid -->
@@ -13,13 +13,12 @@
         <!-- Service Item 1 -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="service-item card">
-                <img src="{% static 'images/gallery/services-page/natural.jpg' %}" class="card-img-top"
+                <img src="{% static 'images/gallery/natural.jpg' %}" class="card-img-top"
                     alt="Natural Makeup">
                 <div class="card-body">
                     <h2 class="card-title">Natural</h2>
-                    <p class="card-text">Enhance your natural beauty with our gentle and subtle makeup services. Perfect
-                        for a fresh and effortless look.</p>
-                    <p class="price-list">Prices from £90.00</p>
+                    <p class="card-text">Enhance your natural beauty with our subtle, gentle makeup—ideal for achieving a fresh, radiant, and effortlessly elegant everyday look perfect for every occasion.</p>
+                    <p class="price-list">Prices from £50.00</p>
                 </div>
             </div>
         </div>
@@ -27,12 +26,11 @@
         <!-- Service Item 2 -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="service-item card">
-                <img src="{% static 'images/gallery/services-page/glam.webp' %}" class="card-img-top"
+                <img src="{% static 'images/gallery/glam.jpg' %}" class="card-img-top"
                     alt="Natural Makeup">
                 <div class="card-body">
                     <h2 class="card-title">Glam</h2>
-                    <p class="card-text">Make a statement with our bold and glamorous makeup. Ideal for special events
-                        and occasions where you want to stand out.</p>
+                    <p class="card-text">Make a bold statement with our glamorous makeup—perfect for special occasions when you want to shine and truly stand out with long-lasting effects.</p>
                     <p class="price-list">Prices from £120.00</p>
                 </div>
             </div>
@@ -41,12 +39,12 @@
         <!-- Service Item 3 -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="service-item card">
-                <img src="{% static 'images/gallery/services-page/bridal.webp' %}" class="card-img-top"
+                <img src="{% static 'images/gallery/bridal.jpg' %}" class="card-img-top"
                     alt="Natural Makeup">
                 <div class="card-body">
                     <h2 class="card-title">Bridal</h2>
                     <p class="card-text">Look radiant on your special day with our bridal makeup services. Tailored to
-                        match your wedding theme and personal style.</p>
+                        match your wedding theme and personal style to make your day extra special.</p>
                     <p class="price-list">Prices from £250.00</p>
                 </div>
             </div>
@@ -55,12 +53,11 @@
         <!-- Service Item 4 -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="service-item card">
-                <img src="{% static 'images/gallery/services-page/hd.jpeg' %}" class="card-img-top"
+                <img src="{% static 'images/gallery/hd.jpg' %}" class="card-img-top"
                     alt="Natural Makeup">
                 <div class="card-body">
                     <h2 class="card-title">HD</h2>
-                    <p class="card-text">Achieve a flawless look with our HD makeup, designed to stay perfect under
-                        high-definition cameras and lighting.</p>
+                    <p class="card-text">Achieve a flawless, camera-ready finish with our HD makeup—crafted to perform beautifully under intense lighting and high-definition cameras.</p>
                     <p class="price-list">Prices from £180.00</p>
                 </div>
             </div>
@@ -68,8 +65,8 @@
     </div>
 </div>
 
-<a href="{% url 'booking_create' %}" class="heading">Book a New Appointment</a>
-<a class="heading" href="/services/bookings/">MY BOOKINGS</a>
+<a href="{% url 'booking_create' %}" class="heading-title mt-5">BOOK A NEW APPOINTMENT</a>
+<a class="heading-title mt-3" href="/services/bookings/">MY BOOKINGS</a>
 </div>
 
 
