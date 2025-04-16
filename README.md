@@ -122,74 +122,55 @@ If the user is logged in then the navigation bar shows 'logout' for pages that o
 
 The navigation bar is fully responsive and collapses on mobile screens to a sandwich icon, this easily allows the user to continue to use the navigation links without the need to press back on the browser. 
 
-![](assets/images/) -------------------------------------------
+![](static/images/gallery/readme.md/sandwich-icon.jpg)
 
-**About images with links**:
+**About Page**:
 
-![](assets/images/) -------------------------------------------
+![](static/images/gallery/readme.md/about-page.jpg)
 
 **Footer**: The footer displays links to social accounts. 
 
-![](assets/images/) -------------------------------------------
+![](static/images/gallery/readme.md/footer.jpg)
 
 ### Services
-**Services page**: This page displays the services that the makeup artist offers, it has a card to each service: Natural, Glam, HD and Bridal
+**Services page**: This page displays the services that the makeup artist offers, it has a card to each service: Natural, Glam, HD and Bridal along with links to booking a new service or manage existing bookings.
 
-![](assets/images/) -------------------------------------------
-
-
-I have chosen to display the services on th same page as the booking form so that the user is able to sign up/sign in and book the service they want as easily as possible, this combination prevents information overload as the pages aren't full of multiple services.
-
-![](assets/images/) -------------------------------------------
+![](static/images/gallery/readme.md/services.jpg)
 
 ### Bookings
 **Booking form**: This form consists of the customer & reservation model forms, they are displayed together to appear as one to make it simple for the user.
 
-If the user is logged in and they exist in the customer model then their name & email address are pre-populated, this has been done in an effort to improve their overall experience.
-
-![](assets/images/) -------------------------------------------
+![](static/images/gallery/readme.md/book-apt.jpg)
 
 If they are not yet in the customer model then only their email address is added using the email from their user account.
 
-If the user is not logged in at all then the form appears blank, as the form requires the phone number to be entered in no specific format I have added this placeholder to the phone number input field to try and help the user.
+If the user is not logged in at all then the form will not appear and prompts the user to sign in or create an account by signing up.
 
-![](assets/images/) -------------------------------------------
+![](static/images/gallery/readme.md/signin-prompt.jpg)
 
-**Manage Reservations**: Logged in users are able to view the 'manage bookings' page, on this page they are shown any booking enquiries they have previously made using the email address associated with their user account. -------------------------------------------
+**Manage Reservations**: Logged in users are able to view the 'manage bookings' page, on this page they are shown any booking enquiries they have previously made using the email address associated with their user account.
 
 The reservation ID is displayed at the top of the reservation item so they can be easily identified.
 
-There are also edit & delete buttons, users are able to edit or delete existing reservations they have that are either 'confirmed' or 'pending'. 
+There are also edit & delete buttons, users are able to edit or delete existing reservations. 
 
-![](assets/images/) -------------------------------------------
+![](static/images/gallery/readme.md/mng-booking.jpg)
 
-I decided that bookings with a date in the past would display with a status of 'expired' and would not be able to be edited or deleted as this could cause confusion for the user and also the admin user, therefore the edit & delete buttons do not display under these reservations. Reservations with a 'rejected' status can also not be changed for the same reasons. -------------------------------------------
+**Edit/Update Reservation**: This page simply displays the reservation form pre-populated using the reservation instance, the user is able to change the date, time or number of guests and resubmit the form. After resubmitting the user is redirected back to the 'Manage Reservations' page and a success message is displayed showing which reservation was edited. 
 
-The status of 'expired' doesn't get pushed to the model and is used only when displaying the bookings to the user. -------------------------------------------
+![](static/images/gallery/readme.md/edit-booking.jpg)
 
-![](assets/images/) -------------------------------------------
+**Delete Reservations**: This page simply displays the booking selected with all of its information, the user presses 'Delete Reservation' the reservation will be deleted from the model. After confirming the user is redirected back to the 'Manage Reservations' page and a success message is displayed showing which reservation was edited. 
 
-![](assets/images/) -------------------------------------------
+![](static/images/gallery/readme.md/delete-booking.jpg)
 
-**Edit Reservation**: This page simply displays the reservation form pre-populated using the reservation instance, the user is able to change the date, time or number of guests and resubmit the form. After resubmitting the user is redirected back to the 'Manage Reservations' page and a success message is displayed showing which reservation was edited. 
-
-![](assets/images/)
-
-**Delete Reservations**: This page simply displays the booking selected with all of its information, the user presses 'Cancel Reservation' and a modal pop's up for the user to confirm the cancellation, explaining that this cannot be undone. If the user chooses 'Cancel it' the reservation will be deleted from the model. After confirming the user is redirected back to the 'Manage Reservations' page and a success message is displayed showing which reservation was edited. 
-
-![](assets/images/) ---------------------------------------------
-
-![](assets/images/) ---------------------------------------------
-
-**Update customer details**: A logged-in user can also update their phone number or full name that is stored in the customer model, this can be done from the 'Update Details' link in the navbar. This page simply displays the customer form but in future I would have liked to have added a feature that enables the user from editing the email field as this can cause problems with the customer model. 
-
-![](assets/images/) ---------------------------------------------
+![](static/images/gallery/readme.md/deleted-booking.jpg)
 
 
 ### Contact Form
 **Contact form**: All users are able to submit a contact form from the 'Contact Us' page, this sends an email to the website owner using Google SMTP. Having a way to communicate with the website owner/restaurant manager is a helpful tool for the user and creates a platform for communication to strengthen the relationships with customers.
 
-![](assets/images/) ---------------------------------------------
+![](static/images/gallery/readme.md/contact-form.jpg)
 
 ---
 ## Technologies Used
@@ -249,7 +230,6 @@ I have chosen to manually test my website.
 
 - [W3C Markup Validation Service](https://validator.w3.org/) 
     - Could not but intend to validate all HTML code written and used in this webpage.
-    - 
 
 ![](assets/images/) ---------------------------------------------
 
@@ -261,6 +241,8 @@ I have chosen to manually test my website.
 - [Pep8](http://pep8online.com/)
     - Could not utilise but intend to test my code for any issues or errors.
 
+### Lighthouse
+= [Lighthouse](static/images/gallery/readme.md/lighthouse.jpg)
 
 ### Manual Testing
 
@@ -270,12 +252,9 @@ I have chosen to manually test my website.
 
 #### Bugs
 
-[Slideshow] - The slideshow on Home Page does not flick through the images correctly when website is running.
-         This is an ongoing issue.
-[Forms] - The bug with the form page could not be resolved. If given the opportunity I will go back and debug the issue ensuring a better user experience. This is an ongoing issue.
-[HTML/CSS] - When deployed the HTML and CSS on the site failed to upload due to bugs. If given the opportunity, I intend on going back and ensuring the project runs fluently with all of its features functional. This is an ongoing issue.
-[Django Admin] - The backend admin site did not register or show the bookings that were made unless they were manually input. If given the opportunity, I intend on tracing the location of the stored. This is an ongoing issue.
-[Debugging] - When the developer sets the DEBUG value to true the website shows the images, HTML and CSS, however when set to False the website crashes. This is an ongoing issue.
+[Slideshow] - The slideshow on Home Page does not cover the entirety of the width of the screen due to photo sizing. The developer intends to work on this for future uer improvements.
+[CKeditor] - i added the CKeditor into the contact form in order for users to edit their message varying from colours to onts etc. The CKeditor began giving error as it wasnt secure. This is an ongoing feature the developer intends to work on. 
+[Django Admin] - The backend admin site did not register or show the bookings that were made unless they were manually input. If given the opportunity, I intend on tracing the location of the stored. This is now fixed.
 
 #### Improvements
 
@@ -286,7 +265,7 @@ There are aspects of UX and functionality that I would like to improve.
 - Thirdly I would have liked for users to be able to click onto the specific service and book directly through the service card which would prohibit the user from having to manually choose.
 - Fourth I would have liked to have provided some sort of functionality that prevents users from creating a booking that is in the past.
 - Fifth, I would have liked to make sure the slideshow was in correct working order to provide the user wit ha better experience.
-- Sixth if given the chance, I would complete my homepage blog section to provide the user with an experience with the website theyre using.
+- Sixth if given the chance, I would complete my homepage blog section to provide the user with an experience with the website they're using.
 
 
 ---
@@ -354,7 +333,7 @@ In the Deploy tab:
 2. You can then choose to deploy the project manually or automatically, automatic deployment will generate a new application every time you push a change to Github, whereas manual deployment requires you to push the `Deploy Branch` button whenever you want a change made.
 3. Once you have chosen your deployment method and have clicked `Deploy Branch` your application will be built and you should see the below `View` button, click this to open your application:
 
-![](assets/images/) ------------------------------------------------
+![](assets/images/) ------------------------------------------------==========================================
 
 ---
 ## Credits
