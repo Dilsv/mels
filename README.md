@@ -231,12 +231,11 @@ I have chosen to manually test my website.
 - [W3C Markup Validation Service](https://validator.w3.org/) 
     - Could not but intend to validate all HTML code written and used in this webpage.
 
-![](assets/images/) ---------------------------------------------
+![](assets/images/)
 
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
-    - Could not but intend to validate all CSS code written and used in this webpage.
 
-![](assets/images/) ---------------------------------------------
+![](static/images/gallery/readme.md/W3CValidation.jpg)
 
 - [Pep8](http://pep8online.com/)
     - Could not utilise but intend to test my code for any issues or errors.
@@ -253,7 +252,7 @@ I have chosen to manually test my website.
 #### Bugs
 
 [Slideshow] - The slideshow on Home Page does not cover the entirety of the width of the screen due to photo sizing. The developer intends to work on this for future uer improvements.
-[CKeditor] - i added the CKeditor into the contact form in order for users to edit their message varying from colours to onts etc. The CKeditor began giving error as it wasnt secure. This is an ongoing feature the developer intends to work on. 
+[CKeditor] - The developer added the CKeditor into the contact form in order for users to edit their message varying from colours to fonts etc. The CKeditor began giving error as it wasn't secure. This is an ongoing feature the developer intends to work on. 
 [Django Admin] - The backend admin site did not register or show the bookings that were made unless they were manually input. If given the opportunity, I intend on tracing the location of the stored. This is now fixed.
 
 #### Improvements
@@ -308,7 +307,7 @@ Cloning your repository will allow you to download a local version of the reposi
 
 ### Creating an Application with Heroku
 
-I followed the below steps using the Code Institute tutorial and [Django Blog cheatsheat](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf)
+I followed the below steps using the Code Institute tutorial and [Django Blog cheat-sheet](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf)
 
 - The following command in the Gitpod CLI will create the relevant files needed for Heroku to install your project dependencies `pip3 freeze --local > requirements.txt`. Please note this file should be added to a .gitignore file to prevent the file from being committed. A `Procfile` is also required that specifies the commands that are executed by the app on startup. 
 
@@ -333,33 +332,29 @@ In the Deploy tab:
 2. You can then choose to deploy the project manually or automatically, automatic deployment will generate a new application every time you push a change to Github, whereas manual deployment requires you to push the `Deploy Branch` button whenever you want a change made.
 3. Once you have chosen your deployment method and have clicked `Deploy Branch` your application will be built and you should see the below `View` button, click this to open your application:
 
-![](assets/images/) ------------------------------------------------==========================================
-
 ---
 ## Credits
 
 Throughout the process of building this website, I have used various sources online to help me fix bugs & tackle problems, in addition to various modules to build the functionality of this website:
 
-[Full-width pic header](https://startbootstrap.com/template/) ------------------------------------------------
+[Footer](https://getbootstrap.com/docs/5.1/examples/)
 
-[Footer](https://getbootstrap.com/docs/5.1/examples/) ------------------------------------------------
+[Navbar](https://getbootstrap.com/docs/5.0/components/navbar/)
 
-[Navbar](https://getbootstrap.com/docs/5.0/components/navbar/) ------------------------------------------------
+[Contact Form](https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend)
 
-[Contact Form](https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend) ------------------------------------------------
+[Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 
-[Django phone number](https://github.com/stefanfoulis/django-phonenumber-field) ------------------------------------------------
+[Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 
-[Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) ------------------------------------------------
+[ChatGPT](https://chatgpt.com/)
 
-[Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) ------------------------------------------------
+[DeepSeek](https://www.deepseek.com/en)
 
-[Gmail SMTP](https://medium.com/@_christopher/how-to-send-emails-with-python-django-through-google-smtp-server-for-free-22ea6ea0fb8e) ------------------------------------------------
-
-[Updating form](https://stackoverflow.com/questions/42217334/django-get-data-and-edit-in-the-same-form-edit-in-one-place) ------------------------------------------------
+[Photopea](https://www.photopea.com/)
 
 
-I have used Aaron Beale's The Diplomat resturant project as a general guidance throughout (https://github.com/ArronBeale/CI_PP4_the_diplomat)
+I have used Aaron Beale's The Diplomat restaurant project as a general guidance throughout (https://github.com/ArronBeale/CI_PP4_the_diplomat)
 
 ---
 ## Acknowledgements
