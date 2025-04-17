@@ -26,7 +26,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header>
-        <!-- Navbar-->
+
         <nav class="navbar navbar-dark navbar-expand-sm">
             <a href="/" class="navbar-brand">TOUCHED BY MEL</a>
 
@@ -35,11 +35,11 @@
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item mr-2"><a class="nav-link text-capitalize" href="{% url 'home' %}">HOME</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link text-capitalize" href="/about">ABOUT</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link text-capitalize" href="/services/">SERVICES</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link text-capitalize" href="/contact/">CONTACT</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link text-capitalize" href="/services/bookings/">MY BOOKINGS</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="/about">About</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="/services/">Services</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="/contact/">Contact</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="/services/bookings/">My bookings</a></li>
         {% if user.is_authenticated %}
 <li class="nav-item">
 	<a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">LOGOUT</a>
@@ -63,7 +63,6 @@
                 </ul>
             </div>
         </nav>
-        <!-- Navbar ends-->
     </header>
 
     {% block content%}
@@ -72,36 +71,29 @@
 
     
 
-    <!-- Footer -->
     <div class="mt-auto">
 
         <footer class="text-center footer">
             <div>
-                <!-- Section: Social media -->
                 <section class="footer-light">
-                    <!-- Facebook -->
                     <a class="btn-footer btn btn-link btn-floating btn-lg text-dark m-1" href="https://facebook.com"
                         target="_blank" rel="noopener" role="button" data-mdb-ripple-color="dark"><i
                             class="fab fa-facebook-f"></i></a>
 
-                    <!-- Twitter -->
                     <a class="btn-footer btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com" target="_blank"
                         rel="noopener" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
-                    <!-- Google -->
                     <a class="btn-footer btn btn-link btn-floating btn-lg text-dark m-1" href="https://google.com" target="_blank"
                         rel="noopener" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
 
-                    <!-- Instagram -->
                     <a class="btn-footer btn btn-link btn-floating btn-lg text-dark m-1" href="https://instagram.com"
                         target="_blank" rel="noopener" role="button" data-mdb-ripple-color="dark"><i
                             class="fab fa-instagram"></i></a>
 
-                    <!-- Linkedin -->
                     <a class="btn-footer btn btn-link btn-floating btn-lg text-dark m-1" href="https://linkedin.com"
                         target="_blank" rel="noopener" role="button" data-mdb-ripple-color="dark"><i
                             class="fab fa-linkedin"></i></a>
-                    <!-- Github -->
+                            
                     <a class="btn-footer btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com" target="_blank"
                         rel="noopener" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
                 </section>
