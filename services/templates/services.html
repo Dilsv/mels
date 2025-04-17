@@ -1,5 +1,3 @@
-<!-- services.html -->
-
 {% extends 'base.html' %}
 
 {% load static %}
@@ -8,9 +6,7 @@
 <h1 class="heading mt-5">Our Services</h1>
 
 <div class="container">
-    <!-- Bootstrap row for the services grid -->
     <div class="row">
-        <!-- Service Item 1 -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="service-item card">
                 <img src="{% static 'images/gallery/natural.jpg' %}" class="card-img-top"
@@ -23,7 +19,6 @@
             </div>
         </div>
 
-        <!-- Service Item 2 -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="service-item card">
                 <img src="{% static 'images/gallery/glam.jpg' %}" class="card-img-top"
@@ -36,7 +31,6 @@
             </div>
         </div>
 
-        <!-- Service Item 3 -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="service-item card">
                 <img src="{% static 'images/gallery/bridal.jpg' %}" class="card-img-top"
@@ -50,7 +44,6 @@
             </div>
         </div>
 
-        <!-- Service Item 4 -->
         <div class="col-md-6 col-lg-3 mb-4">
             <div class="service-item card">
                 <img src="{% static 'images/gallery/hd.jpg' %}" class="card-img-top"
@@ -69,25 +62,4 @@
 <a class="heading-title mt-3" href="/services/bookings/">MY BOOKINGS</a>
 </div>
 
-
-
-<!-- JavaScript to clear the form after submission
-<script>
-    // JavaScript to clear form after submission
-    document.getElementById('bookingForm').addEventListener('submit', function (e) {
-        e.preventDefault();  // Prevent the default form submission
-        // Assuming form submission via AJAX or any other method here
-        this.reset();  // Clear the form fields
-        alert('Thank you for your booking!');  // Optional success message
-    });
-</script>
-
-
-<script>
-    document.getElementById('bookingForm').addEventListener('submit', function () {
-        setTimeout(function () {
-            document.getElementById('bookingForm').reset();
-        }, 1000); // Adjust the delay time if needed
-    });
-</script> -->
 {% endblock %}
