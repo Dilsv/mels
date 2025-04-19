@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = "DEV" in os.environ
 
 ALLOWED_HOSTS = ['8000-dilsv-mels-tr028poqs48.ws.codeinstitute-ide.net',
-                 'mels-18c9cbd51cf1.herokuapp.com', '127.0.0.1']
+                 'mels-18c9cbd51cf1.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -117,8 +117,7 @@ if "DEV" in os.environ:
         }
     }
 else:
-    DATABASES = {"default": dj_database_url.parse(
-        os.environ.get("DATABASE_URL"))}
+    DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 
 # Password validation
