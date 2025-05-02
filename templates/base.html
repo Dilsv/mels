@@ -1,5 +1,4 @@
 {% load static %}
-{% url 'about' as about_url %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
@@ -36,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="{% url 'home' %}">Home</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="/about">About</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="/about/">About</a></li>
                     <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="/services/">Services</a></li>
                     <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="/contact/">Contact</a></li>
                     <li class="nav-item mr-2"><a class="nav-link text-uppercase" href="/services/bookings/">My bookings</a></li>
