@@ -253,8 +253,24 @@ I have chosen to manually test my website.
 
 [Slideshow] - The slideshow on Home Page does not cover the entirety of the width of the screen due to photo sizing. The developer intends to work on this for future uer improvements.
 [CKeditor] - The developer added the CKeditor into the contact form in order for users to edit their message varying from colours to fonts etc. The CKeditor began giving error as it wasn't secure. This is an ongoing feature the developer intends to work on. 
-[Django Admin] - The backend admin site did not register or show the bookings that were made unless they were manually input. If given the opportunity, I intend on tracing the location of the stored. This is now fixed.
-[DEBUG] - The project shows Server Error (500) on the homepage but all other pages are working. Due to time constains the developer could not debug this issue.
+[Django-Admin] - The backend admin site did not register or show the bookings that were made unless they were manually input. If given the opportunity, I intend on tracing the location of the stored. This is now fixed.
+[Server-Error(500)] - The project shows Server Error (500) on the homepage but all other pages are working. The developer was able to fix this bug by using the following code in the settings.py folder to enure seamless use for the user:
+    import logging
+
+    LOGGING = {
+        'version': 1,
+        'disable_existing_loggers': False,
+        'handlers': {
+            'console': {
+                'class': 'logging.StreamHandler',
+            },
+        },
+        'root': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+        },
+    }
+
 
 #### Improvements
 

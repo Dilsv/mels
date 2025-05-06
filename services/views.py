@@ -15,9 +15,9 @@ def booking_create(request):
         form = BookingForm(request.POST)
         if form.is_valid():
             form.instance.user = request.user
-            # Save the form data to the database
+            
             form.save()
-            # Display a success message and redirect to the booking list
+
             return render(
                 request,
                 'services/bookings_list.html',
@@ -27,7 +27,7 @@ def booking_create(request):
                 }
             )
         else:
-            # If the form is not valid, render the page with errors
+
             return render(request, 'booking_create.html', {'form': form})
     else:
         form = BookingForm()
